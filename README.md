@@ -1,6 +1,7 @@
 
 # Federated Learning in PyTorch
 Implementations of various Federated Learning (FL) algorithms in PyTorch, especially for research purposes.
+Based on repo from [here](https://github.com/vaseline555/Federated-Learning-in-PyTorch)
 
 ## Implementation Details
 ### Datasets
