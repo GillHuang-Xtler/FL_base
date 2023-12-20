@@ -1,0 +1,2062 @@
+{
+    "1": {
+        "clients_updated": {
+            "loss": {
+                "avg": 2.3039863109588623,
+                "std": 0.0,
+                "top10p_avg": 2.3039863109588623,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 2.3039863109588623,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.09666666666666666,
+                "std": 0.0,
+                "top10p_avg": 0.09666666666666666,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.09666666666666666,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "2": {
+        "clients_updated": {
+            "loss": {
+                "avg": 2.269428253173828,
+                "std": 0.0,
+                "top10p_avg": 2.269428253173828,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 2.269428253173828,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.17166666666666666,
+                "std": 0.0,
+                "top10p_avg": 0.17166666666666666,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.17166666666666666,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "3": {
+        "clients_updated": {
+            "loss": {
+                "avg": 2.2443528175354004,
+                "std": 0.0,
+                "top10p_avg": 2.2443528175354004,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 2.2443528175354004,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.09833333333333333,
+                "std": 0.0,
+                "top10p_avg": 0.09833333333333333,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.09833333333333333,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "4": {
+        "clients_updated": {
+            "loss": {
+                "avg": 2.189648389816284,
+                "std": 0.0,
+                "top10p_avg": 2.189648389816284,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 2.189648389816284,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.6566666666666666,
+                "std": 0.0,
+                "top10p_avg": 0.6566666666666666,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.6566666666666666,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "5": {
+        "clients_updated": {
+            "loss": {
+                "avg": 2.1243600845336914,
+                "std": 0.0,
+                "top10p_avg": 2.1243600845336914,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 2.1243600845336914,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.2816666666666667,
+                "std": 0.0,
+                "top10p_avg": 0.2816666666666667,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.2816666666666667,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "6": {
+        "clients_updated": {
+            "loss": {
+                "avg": 2.0368704795837402,
+                "std": 0.0,
+                "top10p_avg": 2.0368704795837402,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 2.0368704795837402,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.41333333333333333,
+                "std": 0.0,
+                "top10p_avg": 0.41333333333333333,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.41333333333333333,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "7": {
+        "clients_updated": {
+            "loss": {
+                "avg": 1.9691904783248901,
+                "std": 0.0,
+                "top10p_avg": 1.9691904783248901,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 1.9691904783248901,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.33,
+                "std": 0.0,
+                "top10p_avg": 0.33,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.33,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "8": {
+        "clients_updated": {
+            "loss": {
+                "avg": 2.03690242767334,
+                "std": 0.0,
+                "top10p_avg": 2.03690242767334,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 2.03690242767334,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.285,
+                "std": 0.0,
+                "top10p_avg": 0.285,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.285,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "9": {
+        "clients_updated": {
+            "loss": {
+                "avg": 1.9285200834274292,
+                "std": 0.0,
+                "top10p_avg": 1.9285200834274292,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 1.9285200834274292,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.5433333333333333,
+                "std": 0.0,
+                "top10p_avg": 0.5433333333333333,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.5433333333333333,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "10": {
+        "clients_updated": {
+            "loss": {
+                "avg": 1.5991857051849365,
+                "std": 0.0,
+                "top10p_avg": 1.5991857051849365,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 1.5991857051849365,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.605,
+                "std": 0.0,
+                "top10p_avg": 0.605,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.605,
+                "bottom10p_std": 0.0
+            }
+        },
+        "server_evaluated": {
+            "loss": 1.4311831307411194,
+            "metrics": {
+                "acc1": 0.5476
+            }
+        }
+    },
+    "11": {
+        "clients_updated": {
+            "loss": {
+                "avg": 1.4370044469833374,
+                "std": 0.0,
+                "top10p_avg": 1.4370044469833374,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 1.4370044469833374,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.5583333333333333,
+                "std": 0.0,
+                "top10p_avg": 0.5583333333333333,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.5583333333333333,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "12": {
+        "clients_updated": {
+            "loss": {
+                "avg": 3.631042957305908,
+                "std": 0.0,
+                "top10p_avg": 3.631042957305908,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 3.631042957305908,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.255,
+                "std": 0.0,
+                "top10p_avg": 0.255,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.255,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "13": {
+        "clients_updated": {
+            "loss": {
+                "avg": 2.2457873821258545,
+                "std": 0.0,
+                "top10p_avg": 2.2457873821258545,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 2.2457873821258545,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.3433333333333333,
+                "std": 0.0,
+                "top10p_avg": 0.3433333333333333,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.3433333333333333,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "14": {
+        "clients_updated": {
+            "loss": {
+                "avg": 2.227325201034546,
+                "std": 0.0,
+                "top10p_avg": 2.227325201034546,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 2.227325201034546,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.48333333333333334,
+                "std": 0.0,
+                "top10p_avg": 0.48333333333333334,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.48333333333333334,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "15": {
+        "clients_updated": {
+            "loss": {
+                "avg": 2.1445703506469727,
+                "std": 0.0,
+                "top10p_avg": 2.1445703506469727,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 2.1445703506469727,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.61,
+                "std": 0.0,
+                "top10p_avg": 0.61,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.61,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "16": {
+        "clients_updated": {
+            "loss": {
+                "avg": 2.069413900375366,
+                "std": 0.0,
+                "top10p_avg": 2.069413900375366,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 2.069413900375366,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.5783333333333334,
+                "std": 0.0,
+                "top10p_avg": 0.5783333333333334,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.5783333333333334,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "17": {
+        "clients_updated": {
+            "loss": {
+                "avg": 1.9496814012527466,
+                "std": 0.0,
+                "top10p_avg": 1.9496814012527466,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 1.9496814012527466,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.5916666666666667,
+                "std": 0.0,
+                "top10p_avg": 0.5916666666666667,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.5916666666666667,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "18": {
+        "clients_updated": {
+            "loss": {
+                "avg": 1.71568763256073,
+                "std": 0.0,
+                "top10p_avg": 1.71568763256073,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 1.71568763256073,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.6133333333333333,
+                "std": 0.0,
+                "top10p_avg": 0.6133333333333333,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.6133333333333333,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "19": {
+        "clients_updated": {
+            "loss": {
+                "avg": 1.496700644493103,
+                "std": 0.0,
+                "top10p_avg": 1.496700644493103,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 1.496700644493103,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.5783333333333334,
+                "std": 0.0,
+                "top10p_avg": 0.5783333333333334,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.5783333333333334,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "20": {
+        "clients_updated": {
+            "loss": {
+                "avg": 2.2275524139404297,
+                "std": 0.0,
+                "top10p_avg": 2.2275524139404297,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 2.2275524139404297,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.2633333333333333,
+                "std": 0.0,
+                "top10p_avg": 0.2633333333333333,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.2633333333333333,
+                "bottom10p_std": 0.0
+            }
+        },
+        "server_evaluated": {
+            "loss": 1.8484635210037232,
+            "metrics": {
+                "acc1": 0.4913
+            }
+        }
+    },
+    "21": {
+        "clients_updated": {
+            "loss": {
+                "avg": 1.8535915613174438,
+                "std": 0.0,
+                "top10p_avg": 1.8535915613174438,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 1.8535915613174438,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.48,
+                "std": 0.0,
+                "top10p_avg": 0.48,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.48,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "22": {
+        "clients_updated": {
+            "loss": {
+                "avg": 1.4857966899871826,
+                "std": 0.0,
+                "top10p_avg": 1.4857966899871826,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 1.4857966899871826,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.6383333333333333,
+                "std": 0.0,
+                "top10p_avg": 0.6383333333333333,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.6383333333333333,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "23": {
+        "clients_updated": {
+            "loss": {
+                "avg": 1.2194064855575562,
+                "std": 0.0,
+                "top10p_avg": 1.2194064855575562,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 1.2194064855575562,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.6333333333333333,
+                "std": 0.0,
+                "top10p_avg": 0.6333333333333333,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.6333333333333333,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "24": {
+        "clients_updated": {
+            "loss": {
+                "avg": 1.1426852941513062,
+                "std": 0.0,
+                "top10p_avg": 1.1426852941513062,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 1.1426852941513062,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.595,
+                "std": 0.0,
+                "top10p_avg": 0.595,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.595,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "25": {
+        "clients_updated": {
+            "loss": {
+                "avg": 1.190873146057129,
+                "std": 0.0,
+                "top10p_avg": 1.190873146057129,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 1.190873146057129,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.5133333333333333,
+                "std": 0.0,
+                "top10p_avg": 0.5133333333333333,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.5133333333333333,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "26": {
+        "clients_updated": {
+            "loss": {
+                "avg": 1.714848279953003,
+                "std": 0.0,
+                "top10p_avg": 1.714848279953003,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 1.714848279953003,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.5,
+                "std": 0.0,
+                "top10p_avg": 0.5,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.5,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "27": {
+        "clients_updated": {
+            "loss": {
+                "avg": 1.3451634645462036,
+                "std": 0.0,
+                "top10p_avg": 1.3451634645462036,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 1.3451634645462036,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.6716666666666666,
+                "std": 0.0,
+                "top10p_avg": 0.6716666666666666,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.6716666666666666,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "28": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.8175341486930847,
+                "std": 0.0,
+                "top10p_avg": 0.8175341486930847,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.8175341486930847,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.7716666666666666,
+                "std": 0.0,
+                "top10p_avg": 0.7716666666666666,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.7716666666666666,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "29": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.7223730087280273,
+                "std": 0.0,
+                "top10p_avg": 0.7223730087280273,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.7223730087280273,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.7816666666666666,
+                "std": 0.0,
+                "top10p_avg": 0.7816666666666666,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.7816666666666666,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "30": {
+        "clients_updated": {
+            "loss": {
+                "avg": 1.1188095808029175,
+                "std": 0.0,
+                "top10p_avg": 1.1188095808029175,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 1.1188095808029175,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.6533333333333333,
+                "std": 0.0,
+                "top10p_avg": 0.6533333333333333,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.6533333333333333,
+                "bottom10p_std": 0.0
+            }
+        },
+        "server_evaluated": {
+            "loss": 1.065709878206253,
+            "metrics": {
+                "acc1": 0.5722
+            }
+        }
+    },
+    "31": {
+        "clients_updated": {
+            "loss": {
+                "avg": 1.0410677194595337,
+                "std": 0.0,
+                "top10p_avg": 1.0410677194595337,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 1.0410677194595337,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.5966666666666667,
+                "std": 0.0,
+                "top10p_avg": 0.5966666666666667,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.5966666666666667,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "32": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.7623926997184753,
+                "std": 0.0,
+                "top10p_avg": 0.7623926997184753,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.7623926997184753,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.7366666666666667,
+                "std": 0.0,
+                "top10p_avg": 0.7366666666666667,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.7366666666666667,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "33": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.47013500332832336,
+                "std": 0.0,
+                "top10p_avg": 0.47013500332832336,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.47013500332832336,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.8916666666666667,
+                "std": 0.0,
+                "top10p_avg": 0.8916666666666667,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.8916666666666667,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "34": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.4740222096443176,
+                "std": 0.0,
+                "top10p_avg": 0.4740222096443176,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.4740222096443176,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.8433333333333334,
+                "std": 0.0,
+                "top10p_avg": 0.8433333333333334,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.8433333333333334,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "35": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.4796779453754425,
+                "std": 0.0,
+                "top10p_avg": 0.4796779453754425,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.4796779453754425,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.81,
+                "std": 0.0,
+                "top10p_avg": 0.81,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.81,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "36": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.895006000995636,
+                "std": 0.0,
+                "top10p_avg": 0.895006000995636,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.895006000995636,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.705,
+                "std": 0.0,
+                "top10p_avg": 0.705,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.705,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "37": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.853695273399353,
+                "std": 0.0,
+                "top10p_avg": 0.853695273399353,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.853695273399353,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.655,
+                "std": 0.0,
+                "top10p_avg": 0.655,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.655,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "38": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.608516275882721,
+                "std": 0.0,
+                "top10p_avg": 0.608516275882721,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.608516275882721,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.8166666666666667,
+                "std": 0.0,
+                "top10p_avg": 0.8166666666666667,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.8166666666666667,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "39": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.4734361171722412,
+                "std": 0.0,
+                "top10p_avg": 0.4734361171722412,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.4734361171722412,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.86,
+                "std": 0.0,
+                "top10p_avg": 0.86,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.86,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "40": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.3836422264575958,
+                "std": 0.0,
+                "top10p_avg": 0.3836422264575958,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.3836422264575958,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.885,
+                "std": 0.0,
+                "top10p_avg": 0.885,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.885,
+                "bottom10p_std": 0.0
+            }
+        },
+        "server_evaluated": {
+            "loss": 0.39663463294506074,
+            "metrics": {
+                "acc1": 0.8666
+            }
+        }
+    },
+    "41": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.48607558012008667,
+                "std": 0.0,
+                "top10p_avg": 0.48607558012008667,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.48607558012008667,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.835,
+                "std": 0.0,
+                "top10p_avg": 0.835,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.835,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "42": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.6794167757034302,
+                "std": 0.0,
+                "top10p_avg": 0.6794167757034302,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.6794167757034302,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.805,
+                "std": 0.0,
+                "top10p_avg": 0.805,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.805,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "43": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.6311827898025513,
+                "std": 0.0,
+                "top10p_avg": 0.6311827898025513,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.6311827898025513,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.7916666666666666,
+                "std": 0.0,
+                "top10p_avg": 0.7916666666666666,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.7916666666666666,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "44": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.43628692626953125,
+                "std": 0.0,
+                "top10p_avg": 0.43628692626953125,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.43628692626953125,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.8683333333333333,
+                "std": 0.0,
+                "top10p_avg": 0.8683333333333333,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.8683333333333333,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "45": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.35215017199516296,
+                "std": 0.0,
+                "top10p_avg": 0.35215017199516296,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.35215017199516296,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9083333333333333,
+                "std": 0.0,
+                "top10p_avg": 0.9083333333333333,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9083333333333333,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "46": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.3049694299697876,
+                "std": 0.0,
+                "top10p_avg": 0.3049694299697876,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.3049694299697876,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9283333333333333,
+                "std": 0.0,
+                "top10p_avg": 0.9283333333333333,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9283333333333333,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "47": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.25037798285484314,
+                "std": 0.0,
+                "top10p_avg": 0.25037798285484314,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.25037798285484314,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9233333333333333,
+                "std": 0.0,
+                "top10p_avg": 0.9233333333333333,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9233333333333333,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "48": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.2551679015159607,
+                "std": 0.0,
+                "top10p_avg": 0.2551679015159607,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.2551679015159607,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9366666666666666,
+                "std": 0.0,
+                "top10p_avg": 0.9366666666666666,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9366666666666666,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "49": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.26822152733802795,
+                "std": 0.0,
+                "top10p_avg": 0.26822152733802795,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.26822152733802795,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9216666666666666,
+                "std": 0.0,
+                "top10p_avg": 0.9216666666666666,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9216666666666666,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "50": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.30140432715415955,
+                "std": 0.0,
+                "top10p_avg": 0.30140432715415955,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.30140432715415955,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.91,
+                "std": 0.0,
+                "top10p_avg": 0.91,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.91,
+                "bottom10p_std": 0.0
+            }
+        },
+        "server_evaluated": {
+            "loss": 0.2660875667631626,
+            "metrics": {
+                "acc1": 0.9205
+            }
+        }
+    },
+    "51": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.29130908846855164,
+                "std": 0.0,
+                "top10p_avg": 0.29130908846855164,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.29130908846855164,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9116666666666666,
+                "std": 0.0,
+                "top10p_avg": 0.9116666666666666,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9116666666666666,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "52": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.24853040277957916,
+                "std": 0.0,
+                "top10p_avg": 0.24853040277957916,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.24853040277957916,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9266666666666666,
+                "std": 0.0,
+                "top10p_avg": 0.9266666666666666,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9266666666666666,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "53": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.2447114884853363,
+                "std": 0.0,
+                "top10p_avg": 0.2447114884853363,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.2447114884853363,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.92,
+                "std": 0.0,
+                "top10p_avg": 0.92,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.92,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "54": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.35656824707984924,
+                "std": 0.0,
+                "top10p_avg": 0.35656824707984924,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.35656824707984924,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.8916666666666667,
+                "std": 0.0,
+                "top10p_avg": 0.8916666666666667,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.8916666666666667,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "55": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.39129531383514404,
+                "std": 0.0,
+                "top10p_avg": 0.39129531383514404,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.39129531383514404,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.8833333333333333,
+                "std": 0.0,
+                "top10p_avg": 0.8833333333333333,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.8833333333333333,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "56": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.3404642343521118,
+                "std": 0.0,
+                "top10p_avg": 0.3404642343521118,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.3404642343521118,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.8883333333333333,
+                "std": 0.0,
+                "top10p_avg": 0.8883333333333333,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.8883333333333333,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "57": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.36182522773742676,
+                "std": 0.0,
+                "top10p_avg": 0.36182522773742676,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.36182522773742676,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.8883333333333333,
+                "std": 0.0,
+                "top10p_avg": 0.8883333333333333,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.8883333333333333,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "58": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.26453253626823425,
+                "std": 0.0,
+                "top10p_avg": 0.26453253626823425,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.26453253626823425,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9283333333333333,
+                "std": 0.0,
+                "top10p_avg": 0.9283333333333333,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9283333333333333,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "59": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.2487144023180008,
+                "std": 0.0,
+                "top10p_avg": 0.2487144023180008,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.2487144023180008,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9316666666666666,
+                "std": 0.0,
+                "top10p_avg": 0.9316666666666666,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9316666666666666,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "60": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.2514919638633728,
+                "std": 0.0,
+                "top10p_avg": 0.2514919638633728,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.2514919638633728,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9216666666666666,
+                "std": 0.0,
+                "top10p_avg": 0.9216666666666666,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9216666666666666,
+                "bottom10p_std": 0.0
+            }
+        },
+        "server_evaluated": {
+            "loss": 0.19524106800556182,
+            "metrics": {
+                "acc1": 0.9465
+            }
+        }
+    },
+    "61": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.207050159573555,
+                "std": 0.0,
+                "top10p_avg": 0.207050159573555,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.207050159573555,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9416666666666667,
+                "std": 0.0,
+                "top10p_avg": 0.9416666666666667,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9416666666666667,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "62": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.21569274365901947,
+                "std": 0.0,
+                "top10p_avg": 0.21569274365901947,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.21569274365901947,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9466666666666667,
+                "std": 0.0,
+                "top10p_avg": 0.9466666666666667,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9466666666666667,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "63": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.1452038735151291,
+                "std": 0.0,
+                "top10p_avg": 0.1452038735151291,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.1452038735151291,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.96,
+                "std": 0.0,
+                "top10p_avg": 0.96,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.96,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "64": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.14798645675182343,
+                "std": 0.0,
+                "top10p_avg": 0.14798645675182343,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.14798645675182343,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9466666666666667,
+                "std": 0.0,
+                "top10p_avg": 0.9466666666666667,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9466666666666667,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "65": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.21477282047271729,
+                "std": 0.0,
+                "top10p_avg": 0.21477282047271729,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.21477282047271729,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9283333333333333,
+                "std": 0.0,
+                "top10p_avg": 0.9283333333333333,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9283333333333333,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "66": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.1807892620563507,
+                "std": 0.0,
+                "top10p_avg": 0.1807892620563507,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.1807892620563507,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9383333333333334,
+                "std": 0.0,
+                "top10p_avg": 0.9383333333333334,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9383333333333334,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "67": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.23432274162769318,
+                "std": 0.0,
+                "top10p_avg": 0.23432274162769318,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.23432274162769318,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9416666666666667,
+                "std": 0.0,
+                "top10p_avg": 0.9416666666666667,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9416666666666667,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "68": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.16108737885951996,
+                "std": 0.0,
+                "top10p_avg": 0.16108737885951996,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.16108737885951996,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9433333333333334,
+                "std": 0.0,
+                "top10p_avg": 0.9433333333333334,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9433333333333334,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "69": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.17220033705234528,
+                "std": 0.0,
+                "top10p_avg": 0.17220033705234528,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.17220033705234528,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.95,
+                "std": 0.0,
+                "top10p_avg": 0.95,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.95,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "70": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.17191891372203827,
+                "std": 0.0,
+                "top10p_avg": 0.17191891372203827,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.17191891372203827,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.955,
+                "std": 0.0,
+                "top10p_avg": 0.955,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.955,
+                "bottom10p_std": 0.0
+            }
+        },
+        "server_evaluated": {
+            "loss": 0.16926931146532298,
+            "metrics": {
+                "acc1": 0.9489
+            }
+        }
+    },
+    "71": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.21861760318279266,
+                "std": 0.0,
+                "top10p_avg": 0.21861760318279266,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.21861760318279266,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9383333333333334,
+                "std": 0.0,
+                "top10p_avg": 0.9383333333333334,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9383333333333334,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "72": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.1844097077846527,
+                "std": 0.0,
+                "top10p_avg": 0.1844097077846527,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.1844097077846527,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.95,
+                "std": 0.0,
+                "top10p_avg": 0.95,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.95,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "73": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.19621211290359497,
+                "std": 0.0,
+                "top10p_avg": 0.19621211290359497,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.19621211290359497,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.945,
+                "std": 0.0,
+                "top10p_avg": 0.945,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.945,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "74": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.1738547831773758,
+                "std": 0.0,
+                "top10p_avg": 0.1738547831773758,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.1738547831773758,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.95,
+                "std": 0.0,
+                "top10p_avg": 0.95,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.95,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "75": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.15111646056175232,
+                "std": 0.0,
+                "top10p_avg": 0.15111646056175232,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.15111646056175232,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9566666666666667,
+                "std": 0.0,
+                "top10p_avg": 0.9566666666666667,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9566666666666667,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "76": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.1945158839225769,
+                "std": 0.0,
+                "top10p_avg": 0.1945158839225769,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.1945158839225769,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9483333333333334,
+                "std": 0.0,
+                "top10p_avg": 0.9483333333333334,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9483333333333334,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "77": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.13901734352111816,
+                "std": 0.0,
+                "top10p_avg": 0.13901734352111816,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.13901734352111816,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.955,
+                "std": 0.0,
+                "top10p_avg": 0.955,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.955,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "78": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.20177818834781647,
+                "std": 0.0,
+                "top10p_avg": 0.20177818834781647,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.20177818834781647,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9433333333333334,
+                "std": 0.0,
+                "top10p_avg": 0.9433333333333334,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9433333333333334,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "79": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.21813367307186127,
+                "std": 0.0,
+                "top10p_avg": 0.21813367307186127,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.21813367307186127,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9416666666666667,
+                "std": 0.0,
+                "top10p_avg": 0.9416666666666667,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9416666666666667,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "80": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.2487928718328476,
+                "std": 0.0,
+                "top10p_avg": 0.2487928718328476,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.2487928718328476,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9133333333333333,
+                "std": 0.0,
+                "top10p_avg": 0.9133333333333333,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9133333333333333,
+                "bottom10p_std": 0.0
+            }
+        },
+        "server_evaluated": {
+            "loss": 0.2854166390001774,
+            "metrics": {
+                "acc1": 0.9065
+            }
+        }
+    },
+    "81": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.34475237131118774,
+                "std": 0.0,
+                "top10p_avg": 0.34475237131118774,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.34475237131118774,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.885,
+                "std": 0.0,
+                "top10p_avg": 0.885,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.885,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "82": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.4751774072647095,
+                "std": 0.0,
+                "top10p_avg": 0.4751774072647095,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.4751774072647095,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.84,
+                "std": 0.0,
+                "top10p_avg": 0.84,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.84,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "83": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.3479492664337158,
+                "std": 0.0,
+                "top10p_avg": 0.3479492664337158,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.3479492664337158,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.89,
+                "std": 0.0,
+                "top10p_avg": 0.89,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.89,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "84": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.13368257880210876,
+                "std": 0.0,
+                "top10p_avg": 0.13368257880210876,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.13368257880210876,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9633333333333334,
+                "std": 0.0,
+                "top10p_avg": 0.9633333333333334,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9633333333333334,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "85": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.17351101338863373,
+                "std": 0.0,
+                "top10p_avg": 0.17351101338863373,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.17351101338863373,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9533333333333334,
+                "std": 0.0,
+                "top10p_avg": 0.9533333333333334,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9533333333333334,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "86": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.16166716814041138,
+                "std": 0.0,
+                "top10p_avg": 0.16166716814041138,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.16166716814041138,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9433333333333334,
+                "std": 0.0,
+                "top10p_avg": 0.9433333333333334,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9433333333333334,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "87": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.18409761786460876,
+                "std": 0.0,
+                "top10p_avg": 0.18409761786460876,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.18409761786460876,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9483333333333334,
+                "std": 0.0,
+                "top10p_avg": 0.9483333333333334,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9483333333333334,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "88": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.17151282727718353,
+                "std": 0.0,
+                "top10p_avg": 0.17151282727718353,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.17151282727718353,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9483333333333334,
+                "std": 0.0,
+                "top10p_avg": 0.9483333333333334,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9483333333333334,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "89": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.13329896330833435,
+                "std": 0.0,
+                "top10p_avg": 0.13329896330833435,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.13329896330833435,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9633333333333334,
+                "std": 0.0,
+                "top10p_avg": 0.9633333333333334,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9633333333333334,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "90": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.16736355423927307,
+                "std": 0.0,
+                "top10p_avg": 0.16736355423927307,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.16736355423927307,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9566666666666667,
+                "std": 0.0,
+                "top10p_avg": 0.9566666666666667,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9566666666666667,
+                "bottom10p_std": 0.0
+            }
+        },
+        "server_evaluated": {
+            "loss": 0.14701490778476,
+            "metrics": {
+                "acc1": 0.953
+            }
+        }
+    },
+    "91": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.15495169162750244,
+                "std": 0.0,
+                "top10p_avg": 0.15495169162750244,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.15495169162750244,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.95,
+                "std": 0.0,
+                "top10p_avg": 0.95,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.95,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "92": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.12414117157459259,
+                "std": 0.0,
+                "top10p_avg": 0.12414117157459259,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.12414117157459259,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9633333333333334,
+                "std": 0.0,
+                "top10p_avg": 0.9633333333333334,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9633333333333334,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "93": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.14444735646247864,
+                "std": 0.0,
+                "top10p_avg": 0.14444735646247864,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.14444735646247864,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9533333333333334,
+                "std": 0.0,
+                "top10p_avg": 0.9533333333333334,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9533333333333334,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "94": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.1492093950510025,
+                "std": 0.0,
+                "top10p_avg": 0.1492093950510025,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.1492093950510025,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.96,
+                "std": 0.0,
+                "top10p_avg": 0.96,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.96,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "95": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.1666358858346939,
+                "std": 0.0,
+                "top10p_avg": 0.1666358858346939,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.1666358858346939,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9516666666666667,
+                "std": 0.0,
+                "top10p_avg": 0.9516666666666667,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9516666666666667,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "96": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.17242620885372162,
+                "std": 0.0,
+                "top10p_avg": 0.17242620885372162,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.17242620885372162,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9583333333333334,
+                "std": 0.0,
+                "top10p_avg": 0.9583333333333334,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9583333333333334,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "97": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.12787456810474396,
+                "std": 0.0,
+                "top10p_avg": 0.12787456810474396,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.12787456810474396,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9666666666666667,
+                "std": 0.0,
+                "top10p_avg": 0.9666666666666667,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9666666666666667,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "98": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.11004070192575455,
+                "std": 0.0,
+                "top10p_avg": 0.11004070192575455,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.11004070192575455,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.965,
+                "std": 0.0,
+                "top10p_avg": 0.965,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.965,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "99": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.11529425531625748,
+                "std": 0.0,
+                "top10p_avg": 0.11529425531625748,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.11529425531625748,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.97,
+                "std": 0.0,
+                "top10p_avg": 0.97,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.97,
+                "bottom10p_std": 0.0
+            }
+        }
+    },
+    "100": {
+        "clients_updated": {
+            "loss": {
+                "avg": 0.14904773235321045,
+                "std": 0.0,
+                "top10p_avg": 0.14904773235321045,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.14904773235321045,
+                "bottom10p_std": 0.0
+            },
+            "acc1": {
+                "avg": 0.9533333333333334,
+                "std": 0.0,
+                "top10p_avg": 0.9533333333333334,
+                "top10p_std": 0.0,
+                "bottom10p_avg": 0.9533333333333334,
+                "bottom10p_std": 0.0
+            }
+        },
+        "server_evaluated": {
+            "loss": 0.12767943803220988,
+            "metrics": {
+                "acc1": 0.9596
+            }
+        }
+    }
+}

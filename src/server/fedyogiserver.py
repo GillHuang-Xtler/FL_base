@@ -4,8 +4,6 @@ from .fedavgserver import FedavgServer
 
 logger = logging.getLogger(__name__)
 
-
-
 class FedyogiServer(FedavgServer):
     def __init__(self, **kwargs):
         super(FedyogiServer, self).__init__(**kwargs)

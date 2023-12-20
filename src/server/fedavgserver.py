@@ -46,10 +46,10 @@ class FedavgServer(BaseServer):
         return optimizer
 
     def _create_clients(self, client_datasets):
-        CLINET_CLASS = import_module(f'..client.{self.args.algorithm}client', package=__package__).__dict__[f'{self.args.algorithm.title()}Client']
+        CLIENT_CLASS = import_module(f'..client.{self.args.algorithm}client', package=__package__).__dict__[f'{self.args.algorithm.title()}Client']
 
         def __create_client(identifier, datasets):
-            client = CLINET_CLASS(args=self.args, training_set=datasets[0], test_set=datasets[-1])
+            client = CLIENT_CLASS(args=self.args, training_set=datasets[0], test_set=datasets[-1])
             client.id = identifier
             return client
 

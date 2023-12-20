@@ -358,4 +358,14 @@ class MetricManager:
     @property
     def results(self):
         return self._results
-        
+
+
+class DifferentialPrivacy:
+    def __init__(self,**kwargs):
+        super(DifferentialPrivacy, self).__init__()
+
+    def clip(self):
+        return
+
+    def noise(self):
+        return

@@ -1,0 +1,1327 @@
+[INFO] (2023/12/20 02:57:18 PM) [WELCOME] Initialize...
+[INFO] (2023/12/20 02:57:18 PM) 
+    _______ _______ ______  _______  ______ _______ _______ _______ ______ 
+    |______ |______ |     \ |______ |_____/ |_____|    |    |______ |     \
+    |       |_______|_____/_|_______|__ _\_ |_ ___|_ __|  _ |______ |_____/
+        |      |______ |_____| |_____/ | \  |   |   | \  | |  ____        
+        |_____ |______ |     | |    \_ |  \_| __|__ |  \_| |_____|        
+                                                                    
+                        By. vaseline555 (Adam)
+    
+[INFO] (2023/12/20 02:57:18 PM) [SEED] ...seed is set: 42!
+[INFO] (2023/12/20 02:57:18 PM) [LOAD] Fetch dataset!
+[INFO] (2023/12/20 02:57:18 PM) [LOAD] [MNIST] Fetching dataset!
+[INFO] (2023/12/20 02:57:18 PM) [LOAD] [MNIST] ...fetched dataset!
+[INFO] (2023/12/20 02:57:18 PM) [LOAD] ...successfully fetched dataset!
+[INFO] (2023/12/20 02:57:18 PM) [SIMULATE] Simulate dataset split (split scenario: `IID`)!
+[INFO] (2023/12/20 02:57:18 PM) [SIMULATE] ...done simulating dataset split (split scenario: `IID`)!
+[INFO] (2023/12/20 02:57:18 PM) [SIMULATE] Create client datasets!
+[INFO] (2023/12/20 02:57:18 PM) [SIMULATE] ...creating client datasets... 100% |████████████████████| [100   /100]
+[INFO] (2023/12/20 02:57:18 PM) [SIMULATE] ...successfully created client datasets!
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] List up configurations...
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - EXP_NAME: FedSgd_MNIST_CNN_IID_C0.0_B0'
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - SEED: 42
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - DEVICE: cuda
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - DATA_PATH: ./data
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - LOG_PATH: ./log
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - RESULT_PATH: ./result/FedSgd_MNIST_CNN_IID_C0.0_B0'_231220_145718
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - USE_TB: False
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - TB_PORT: 6006
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - TB_HOST: 0.0.0.0
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - DATASET: MNIST
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - TEST_SIZE: 0.0
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - RAWSMPL: 1.0
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - RESIZE: 28
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - CROP: None
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - IMNORM: False
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - RANDROT: None
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - RANDHF: None
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - RANDVF: None
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - RANDJIT: None
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - SPLIT_TYPE: iid
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - MINCLS: 2
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - CNCNTRTN: 0.1
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - MODEL_NAME: TwoCNN
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - HIDDEN_SIZE: 200
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - DROPOUT: 0.1
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - USE_MODEL_TOKENIZER: False
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - USE_PT_MODEL: False
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - SEQ_LEN: 512
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - NUM_LAYERS: 2
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - NUM_EMBEDDINGS: 1000
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - EMBEDDING_SIZE: 512
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - INIT_TYPE: xavier
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - INIT_GAIN: 1.0
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - ALGORITHM: fedsgd
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - EVAL_TYPE: both
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - EVAL_FRACTION: 1.0
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - EVAL_EVERY: 10
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - EVAL_METRICS: ['acc1']
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - K: 100
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - R: 100
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - C: 0.0
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - E: 1
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - B: 0
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - BETA1: 0.0
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - NO_SHUFFLE: False
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - OPTIMIZER: SGD
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - MAX_GRAD_NORM: 0.0
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - WEIGHT_DECAY: 0
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - MOMENTUM: 0.0
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - LR: 0.215
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - LR_DECAY: 0.95
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - LR_DECAY_STEP: 25
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - CRITERION: CrossEntropyLoss
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - MU: 0.01
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - IN_CHANNELS: 1
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - NUM_CLASSES: 10
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - GLOVE_EMB: NOT USE!
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - TRAIN_ONLY: True
+[INFO] (2023/12/20 02:57:19 PM) [CONFIG] - IS_SEQ2SEQ: False
+[INFO] (2023/12/20 02:57:19 PM) [FEDSGD] [MNIST] [Round: 0000] Initialize a model!
+[INFO] (2023/12/20 02:57:19 PM) [FEDSGD] [MNIST] [Round: 0000] ...sucessfully initialized the model (TwoCNN; (Initialization type: XAVIER))!
+[INFO] (2023/12/20 02:57:19 PM) [FEDSGD] [MNIST] [Round: 0000] Create clients!
+[INFO] (2023/12/20 02:57:19 PM) [FEDSGD] [MNIST] [Round: 0000] ...creating clients... 100% |████████████████████| [100   /100]
+[INFO] (2023/12/20 02:57:19 PM) [FEDSGD] [MNIST] [Round: 0000] ...sucessfully created 100 clients!
+[INFO] (2023/12/20 02:57:19 PM) [FEDSGD] [MNIST] [Round: 0001] Sample clients!
+[INFO] (2023/12/20 02:57:19 PM) [FEDSGD] [MNIST] [Round: 0001] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:19 PM) [FEDSGD] [MNIST] [Round: 0001] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:19 PM) [FEDSGD] [MNIST] [Round: 0001] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0001] [UPDATE] [CLIENT] < 000081 > | loss: 2.3040 | acc1: 0.0967 
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0001] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (2.3040) Std. (0.0000) | Top 10% (2.3040) Std. (0.0000) | Bottom 10% (2.3040) Std. (0.0000)
+    - Acc1: Avg. (0.0967) Std. (0.0000) | Top 10% (0.0967) Std. (0.0000) | Bottom 10% (0.0967) Std. (0.0000)
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0001] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0001] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0001] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0001] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0002] Sample clients!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0002] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0002] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0002] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0002] [UPDATE] [CLIENT] < 000014 > | loss: 2.2694 | acc1: 0.1717 
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0002] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (2.2694) Std. (0.0000) | Top 10% (2.2694) Std. (0.0000) | Bottom 10% (2.2694) Std. (0.0000)
+    - Acc1: Avg. (0.1717) Std. (0.0000) | Top 10% (0.1717) Std. (0.0000) | Bottom 10% (0.1717) Std. (0.0000)
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0002] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0002] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0002] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0002] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0003] Sample clients!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0003] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0003] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0003] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0003] [UPDATE] [CLIENT] < 000003 > | loss: 2.2444 | acc1: 0.0983 
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0003] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (2.2444) Std. (0.0000) | Top 10% (2.2444) Std. (0.0000) | Bottom 10% (2.2444) Std. (0.0000)
+    - Acc1: Avg. (0.0983) Std. (0.0000) | Top 10% (0.0983) Std. (0.0000) | Bottom 10% (0.0983) Std. (0.0000)
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0003] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0003] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0003] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0003] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0004] Sample clients!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0004] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0004] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0004] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0004] [UPDATE] [CLIENT] < 000094 > | loss: 2.1896 | acc1: 0.6567 
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0004] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (2.1896) Std. (0.0000) | Top 10% (2.1896) Std. (0.0000) | Bottom 10% (2.1896) Std. (0.0000)
+    - Acc1: Avg. (0.6567) Std. (0.0000) | Top 10% (0.6567) Std. (0.0000) | Bottom 10% (0.6567) Std. (0.0000)
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0004] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0004] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0004] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0004] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0005] Sample clients!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0005] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0005] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:21 PM) [FEDSGD] [MNIST] [Round: 0005] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0005] [UPDATE] [CLIENT] < 000035 > | loss: 2.1244 | acc1: 0.2817 
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0005] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (2.1244) Std. (0.0000) | Top 10% (2.1244) Std. (0.0000) | Bottom 10% (2.1244) Std. (0.0000)
+    - Acc1: Avg. (0.2817) Std. (0.0000) | Top 10% (0.2817) Std. (0.0000) | Bottom 10% (0.2817) Std. (0.0000)
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0005] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0005] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0005] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0005] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0006] Sample clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0006] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0006] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0006] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0006] [UPDATE] [CLIENT] < 000031 > | loss: 2.0369 | acc1: 0.4133 
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0006] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (2.0369) Std. (0.0000) | Top 10% (2.0369) Std. (0.0000) | Bottom 10% (2.0369) Std. (0.0000)
+    - Acc1: Avg. (0.4133) Std. (0.0000) | Top 10% (0.4133) Std. (0.0000) | Bottom 10% (0.4133) Std. (0.0000)
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0006] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0006] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0006] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0006] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0007] Sample clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0007] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0007] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0007] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0007] [UPDATE] [CLIENT] < 000028 > | loss: 1.9692 | acc1: 0.3300 
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0007] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (1.9692) Std. (0.0000) | Top 10% (1.9692) Std. (0.0000) | Bottom 10% (1.9692) Std. (0.0000)
+    - Acc1: Avg. (0.3300) Std. (0.0000) | Top 10% (0.3300) Std. (0.0000) | Bottom 10% (0.3300) Std. (0.0000)
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0007] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0007] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0007] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0007] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0008] Sample clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0008] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0008] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0008] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0008] [UPDATE] [CLIENT] < 000017 > | loss: 2.0369 | acc1: 0.2850 
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0008] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (2.0369) Std. (0.0000) | Top 10% (2.0369) Std. (0.0000) | Bottom 10% (2.0369) Std. (0.0000)
+    - Acc1: Avg. (0.2850) Std. (0.0000) | Top 10% (0.2850) Std. (0.0000) | Bottom 10% (0.2850) Std. (0.0000)
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0008] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0008] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0008] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0008] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0009] Sample clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0009] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0009] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0009] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0009] [UPDATE] [CLIENT] < 000094 > | loss: 1.9285 | acc1: 0.5433 
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0009] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (1.9285) Std. (0.0000) | Top 10% (1.9285) Std. (0.0000) | Bottom 10% (1.9285) Std. (0.0000)
+    - Acc1: Avg. (0.5433) Std. (0.0000) | Top 10% (0.5433) Std. (0.0000) | Bottom 10% (0.5433) Std. (0.0000)
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0009] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0009] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0009] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0009] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0010] Sample clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0010] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0010] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0010] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0010] [UPDATE] [CLIENT] < 000013 > | loss: 1.5992 | acc1: 0.6050 
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0010] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (1.5992) Std. (0.0000) | Top 10% (1.5992) Std. (0.0000) | Bottom 10% (1.5992) Std. (0.0000)
+    - Acc1: Avg. (0.6050) Std. (0.0000) | Top 10% (0.6050) Std. (0.0000) | Bottom 10% (0.6050) Std. (0.0000)
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0010] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0010] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0010] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0010] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0010] Sample clients!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0010] ...99 clients are selected!
+[INFO] (2023/12/20 02:57:22 PM) [FEDSGD] [MNIST] [Round: 0010] Request evaluation to 99 clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0010] [EVALUATE] [SERVER] | loss: 1.4312 | acc1: 0.5476 
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0011] Sample clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0011] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0011] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0011] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0011] [UPDATE] [CLIENT] < 000072 > | loss: 1.4370 | acc1: 0.5583 
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0011] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (1.4370) Std. (0.0000) | Top 10% (1.4370) Std. (0.0000) | Bottom 10% (1.4370) Std. (0.0000)
+    - Acc1: Avg. (0.5583) Std. (0.0000) | Top 10% (0.5583) Std. (0.0000) | Bottom 10% (0.5583) Std. (0.0000)
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0011] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0011] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0011] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0011] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0012] Sample clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0012] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0012] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0012] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0012] [UPDATE] [CLIENT] < 000091 > | loss: 3.6310 | acc1: 0.2550 
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0012] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (3.6310) Std. (0.0000) | Top 10% (3.6310) Std. (0.0000) | Bottom 10% (3.6310) Std. (0.0000)
+    - Acc1: Avg. (0.2550) Std. (0.0000) | Top 10% (0.2550) Std. (0.0000) | Bottom 10% (0.2550) Std. (0.0000)
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0012] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0012] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0012] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0012] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0013] Sample clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0013] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0013] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0013] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0013] [UPDATE] [CLIENT] < 000040 > | loss: 2.2458 | acc1: 0.3433 
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0013] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (2.2458) Std. (0.0000) | Top 10% (2.2458) Std. (0.0000) | Bottom 10% (2.2458) Std. (0.0000)
+    - Acc1: Avg. (0.3433) Std. (0.0000) | Top 10% (0.3433) Std. (0.0000) | Bottom 10% (0.3433) Std. (0.0000)
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0013] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0013] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0013] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0013] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0014] Sample clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0014] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0014] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0014] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0014] [UPDATE] [CLIENT] < 000027 > | loss: 2.2273 | acc1: 0.4833 
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0014] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (2.2273) Std. (0.0000) | Top 10% (2.2273) Std. (0.0000) | Bottom 10% (2.2273) Std. (0.0000)
+    - Acc1: Avg. (0.4833) Std. (0.0000) | Top 10% (0.4833) Std. (0.0000) | Bottom 10% (0.4833) Std. (0.0000)
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0014] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0014] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0014] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0014] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0015] Sample clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0015] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0015] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0015] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0015] [UPDATE] [CLIENT] < 000083 > | loss: 2.1446 | acc1: 0.6100 
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0015] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (2.1446) Std. (0.0000) | Top 10% (2.1446) Std. (0.0000) | Bottom 10% (2.1446) Std. (0.0000)
+    - Acc1: Avg. (0.6100) Std. (0.0000) | Top 10% (0.6100) Std. (0.0000) | Bottom 10% (0.6100) Std. (0.0000)
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0015] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0015] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0015] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0015] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0016] Sample clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0016] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0016] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:23 PM) [FEDSGD] [MNIST] [Round: 0016] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0016] [UPDATE] [CLIENT] < 000063 > | loss: 2.0694 | acc1: 0.5783 
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0016] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (2.0694) Std. (0.0000) | Top 10% (2.0694) Std. (0.0000) | Bottom 10% (2.0694) Std. (0.0000)
+    - Acc1: Avg. (0.5783) Std. (0.0000) | Top 10% (0.5783) Std. (0.0000) | Bottom 10% (0.5783) Std. (0.0000)
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0016] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0016] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0016] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0016] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0017] Sample clients!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0017] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0017] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0017] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0017] [UPDATE] [CLIENT] < 000050 > | loss: 1.9497 | acc1: 0.5917 
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0017] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (1.9497) Std. (0.0000) | Top 10% (1.9497) Std. (0.0000) | Bottom 10% (1.9497) Std. (0.0000)
+    - Acc1: Avg. (0.5917) Std. (0.0000) | Top 10% (0.5917) Std. (0.0000) | Bottom 10% (0.5917) Std. (0.0000)
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0017] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0017] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0017] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0017] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0018] Sample clients!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0018] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0018] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0018] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0018] [UPDATE] [CLIENT] < 000082 > | loss: 1.7157 | acc1: 0.6133 
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0018] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (1.7157) Std. (0.0000) | Top 10% (1.7157) Std. (0.0000) | Bottom 10% (1.7157) Std. (0.0000)
+    - Acc1: Avg. (0.6133) Std. (0.0000) | Top 10% (0.6133) Std. (0.0000) | Bottom 10% (0.6133) Std. (0.0000)
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0018] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0018] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0018] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0018] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0019] Sample clients!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0019] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0019] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0019] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0019] [UPDATE] [CLIENT] < 000058 > | loss: 1.4967 | acc1: 0.5783 
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0019] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (1.4967) Std. (0.0000) | Top 10% (1.4967) Std. (0.0000) | Bottom 10% (1.4967) Std. (0.0000)
+    - Acc1: Avg. (0.5783) Std. (0.0000) | Top 10% (0.5783) Std. (0.0000) | Bottom 10% (0.5783) Std. (0.0000)
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0019] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0019] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0019] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0019] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0020] Sample clients!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0020] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0020] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0020] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0020] [UPDATE] [CLIENT] < 000018 > | loss: 2.2276 | acc1: 0.2633 
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0020] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (2.2276) Std. (0.0000) | Top 10% (2.2276) Std. (0.0000) | Bottom 10% (2.2276) Std. (0.0000)
+    - Acc1: Avg. (0.2633) Std. (0.0000) | Top 10% (0.2633) Std. (0.0000) | Bottom 10% (0.2633) Std. (0.0000)
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0020] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0020] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0020] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0020] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0020] Sample clients!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0020] ...99 clients are selected!
+[INFO] (2023/12/20 02:57:24 PM) [FEDSGD] [MNIST] [Round: 0020] Request evaluation to 99 clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0020] [EVALUATE] [SERVER] | loss: 1.8485 | acc1: 0.4913 
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0021] Sample clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0021] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0021] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0021] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0021] [UPDATE] [CLIENT] < 000031 > | loss: 1.8536 | acc1: 0.4800 
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0021] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (1.8536) Std. (0.0000) | Top 10% (1.8536) Std. (0.0000) | Bottom 10% (1.8536) Std. (0.0000)
+    - Acc1: Avg. (0.4800) Std. (0.0000) | Top 10% (0.4800) Std. (0.0000) | Bottom 10% (0.4800) Std. (0.0000)
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0021] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0021] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0021] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0021] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0022] Sample clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0022] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0022] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0022] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0022] [UPDATE] [CLIENT] < 000028 > | loss: 1.4858 | acc1: 0.6383 
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0022] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (1.4858) Std. (0.0000) | Top 10% (1.4858) Std. (0.0000) | Bottom 10% (1.4858) Std. (0.0000)
+    - Acc1: Avg. (0.6383) Std. (0.0000) | Top 10% (0.6383) Std. (0.0000) | Bottom 10% (0.6383) Std. (0.0000)
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0022] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0022] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0022] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0022] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0023] Sample clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0023] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0023] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0023] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0023] [UPDATE] [CLIENT] < 000008 > | loss: 1.2194 | acc1: 0.6333 
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0023] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (1.2194) Std. (0.0000) | Top 10% (1.2194) Std. (0.0000) | Bottom 10% (1.2194) Std. (0.0000)
+    - Acc1: Avg. (0.6333) Std. (0.0000) | Top 10% (0.6333) Std. (0.0000) | Bottom 10% (0.6333) Std. (0.0000)
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0023] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0023] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0023] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0023] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0024] Sample clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0024] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0024] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0024] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0024] [UPDATE] [CLIENT] < 000043 > | loss: 1.1427 | acc1: 0.5950 
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0024] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (1.1427) Std. (0.0000) | Top 10% (1.1427) Std. (0.0000) | Bottom 10% (1.1427) Std. (0.0000)
+    - Acc1: Avg. (0.5950) Std. (0.0000) | Top 10% (0.5950) Std. (0.0000) | Bottom 10% (0.5950) Std. (0.0000)
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0024] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0024] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0024] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0024] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0025] Sample clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0025] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0025] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0025] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0025] [UPDATE] [CLIENT] < 000002 > | loss: 1.1909 | acc1: 0.5133 
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0025] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (1.1909) Std. (0.0000) | Top 10% (1.1909) Std. (0.0000) | Bottom 10% (1.1909) Std. (0.0000)
+    - Acc1: Avg. (0.5133) Std. (0.0000) | Top 10% (0.5133) Std. (0.0000) | Bottom 10% (0.5133) Std. (0.0000)
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0025] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0025] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0025] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0025] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0026] Sample clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0026] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0026] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0026] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0026] [UPDATE] [CLIENT] < 000075 > | loss: 1.7148 | acc1: 0.5000 
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0026] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (1.7148) Std. (0.0000) | Top 10% (1.7148) Std. (0.0000) | Bottom 10% (1.7148) Std. (0.0000)
+    - Acc1: Avg. (0.5000) Std. (0.0000) | Top 10% (0.5000) Std. (0.0000) | Bottom 10% (0.5000) Std. (0.0000)
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0026] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0026] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0026] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0026] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0027] Sample clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0027] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0027] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:25 PM) [FEDSGD] [MNIST] [Round: 0027] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0027] [UPDATE] [CLIENT] < 000070 > | loss: 1.3452 | acc1: 0.6717 
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0027] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (1.3452) Std. (0.0000) | Top 10% (1.3452) Std. (0.0000) | Bottom 10% (1.3452) Std. (0.0000)
+    - Acc1: Avg. (0.6717) Std. (0.0000) | Top 10% (0.6717) Std. (0.0000) | Bottom 10% (0.6717) Std. (0.0000)
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0027] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0027] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0027] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0027] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0028] Sample clients!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0028] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0028] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0028] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0028] [UPDATE] [CLIENT] < 000029 > | loss: 0.8175 | acc1: 0.7717 
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0028] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.8175) Std. (0.0000) | Top 10% (0.8175) Std. (0.0000) | Bottom 10% (0.8175) Std. (0.0000)
+    - Acc1: Avg. (0.7717) Std. (0.0000) | Top 10% (0.7717) Std. (0.0000) | Bottom 10% (0.7717) Std. (0.0000)
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0028] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0028] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0028] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0028] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0029] Sample clients!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0029] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0029] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0029] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0029] [UPDATE] [CLIENT] < 000075 > | loss: 0.7224 | acc1: 0.7817 
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0029] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.7224) Std. (0.0000) | Top 10% (0.7224) Std. (0.0000) | Bottom 10% (0.7224) Std. (0.0000)
+    - Acc1: Avg. (0.7817) Std. (0.0000) | Top 10% (0.7817) Std. (0.0000) | Bottom 10% (0.7817) Std. (0.0000)
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0029] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0029] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0029] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0029] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0030] Sample clients!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0030] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0030] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0030] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0030] [UPDATE] [CLIENT] < 000028 > | loss: 1.1188 | acc1: 0.6533 
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0030] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (1.1188) Std. (0.0000) | Top 10% (1.1188) Std. (0.0000) | Bottom 10% (1.1188) Std. (0.0000)
+    - Acc1: Avg. (0.6533) Std. (0.0000) | Top 10% (0.6533) Std. (0.0000) | Bottom 10% (0.6533) Std. (0.0000)
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0030] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0030] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0030] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0030] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0030] Sample clients!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0030] ...99 clients are selected!
+[INFO] (2023/12/20 02:57:26 PM) [FEDSGD] [MNIST] [Round: 0030] Request evaluation to 99 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0030] [EVALUATE] [SERVER] | loss: 1.0657 | acc1: 0.5722 
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0031] Sample clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0031] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0031] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0031] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0031] [UPDATE] [CLIENT] < 000008 > | loss: 1.0411 | acc1: 0.5967 
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0031] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (1.0411) Std. (0.0000) | Top 10% (1.0411) Std. (0.0000) | Bottom 10% (1.0411) Std. (0.0000)
+    - Acc1: Avg. (0.5967) Std. (0.0000) | Top 10% (0.5967) Std. (0.0000) | Bottom 10% (0.5967) Std. (0.0000)
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0031] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0031] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0031] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0031] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0032] Sample clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0032] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0032] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0032] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0032] [UPDATE] [CLIENT] < 000076 > | loss: 0.7624 | acc1: 0.7367 
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0032] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.7624) Std. (0.0000) | Top 10% (0.7624) Std. (0.0000) | Bottom 10% (0.7624) Std. (0.0000)
+    - Acc1: Avg. (0.7367) Std. (0.0000) | Top 10% (0.7367) Std. (0.0000) | Bottom 10% (0.7367) Std. (0.0000)
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0032] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0032] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0032] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0032] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0033] Sample clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0033] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0033] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0033] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0033] [UPDATE] [CLIENT] < 000008 > | loss: 0.4701 | acc1: 0.8917 
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0033] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.4701) Std. (0.0000) | Top 10% (0.4701) Std. (0.0000) | Bottom 10% (0.4701) Std. (0.0000)
+    - Acc1: Avg. (0.8917) Std. (0.0000) | Top 10% (0.8917) Std. (0.0000) | Bottom 10% (0.8917) Std. (0.0000)
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0033] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0033] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0033] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0033] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0034] Sample clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0034] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0034] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0034] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0034] [UPDATE] [CLIENT] < 000086 > | loss: 0.4740 | acc1: 0.8433 
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0034] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.4740) Std. (0.0000) | Top 10% (0.4740) Std. (0.0000) | Bottom 10% (0.4740) Std. (0.0000)
+    - Acc1: Avg. (0.8433) Std. (0.0000) | Top 10% (0.8433) Std. (0.0000) | Bottom 10% (0.8433) Std. (0.0000)
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0034] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0034] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0034] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0034] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0035] Sample clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0035] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0035] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0035] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0035] [UPDATE] [CLIENT] < 000030 > | loss: 0.4797 | acc1: 0.8100 
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0035] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.4797) Std. (0.0000) | Top 10% (0.4797) Std. (0.0000) | Bottom 10% (0.4797) Std. (0.0000)
+    - Acc1: Avg. (0.8100) Std. (0.0000) | Top 10% (0.8100) Std. (0.0000) | Bottom 10% (0.8100) Std. (0.0000)
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0035] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0035] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0035] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0035] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0036] Sample clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0036] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0036] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0036] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0036] [UPDATE] [CLIENT] < 000051 > | loss: 0.8950 | acc1: 0.7050 
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0036] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.8950) Std. (0.0000) | Top 10% (0.8950) Std. (0.0000) | Bottom 10% (0.8950) Std. (0.0000)
+    - Acc1: Avg. (0.7050) Std. (0.0000) | Top 10% (0.7050) Std. (0.0000) | Bottom 10% (0.7050) Std. (0.0000)
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0036] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0036] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0036] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0036] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0037] Sample clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0037] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0037] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0037] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0037] [UPDATE] [CLIENT] < 000015 > | loss: 0.8537 | acc1: 0.6550 
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0037] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.8537) Std. (0.0000) | Top 10% (0.8537) Std. (0.0000) | Bottom 10% (0.8537) Std. (0.0000)
+    - Acc1: Avg. (0.6550) Std. (0.0000) | Top 10% (0.6550) Std. (0.0000) | Bottom 10% (0.6550) Std. (0.0000)
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0037] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0037] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0037] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0037] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0038] Sample clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0038] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0038] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:27 PM) [FEDSGD] [MNIST] [Round: 0038] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0038] [UPDATE] [CLIENT] < 000072 > | loss: 0.6085 | acc1: 0.8167 
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0038] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.6085) Std. (0.0000) | Top 10% (0.6085) Std. (0.0000) | Bottom 10% (0.6085) Std. (0.0000)
+    - Acc1: Avg. (0.8167) Std. (0.0000) | Top 10% (0.8167) Std. (0.0000) | Bottom 10% (0.8167) Std. (0.0000)
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0038] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0038] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0038] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0038] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0039] Sample clients!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0039] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0039] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0039] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0039] [UPDATE] [CLIENT] < 000031 > | loss: 0.4734 | acc1: 0.8600 
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0039] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.4734) Std. (0.0000) | Top 10% (0.4734) Std. (0.0000) | Bottom 10% (0.4734) Std. (0.0000)
+    - Acc1: Avg. (0.8600) Std. (0.0000) | Top 10% (0.8600) Std. (0.0000) | Bottom 10% (0.8600) Std. (0.0000)
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0039] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0039] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0039] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0039] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0040] Sample clients!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0040] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0040] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0040] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0040] [UPDATE] [CLIENT] < 000074 > | loss: 0.3836 | acc1: 0.8850 
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0040] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.3836) Std. (0.0000) | Top 10% (0.3836) Std. (0.0000) | Bottom 10% (0.3836) Std. (0.0000)
+    - Acc1: Avg. (0.8850) Std. (0.0000) | Top 10% (0.8850) Std. (0.0000) | Bottom 10% (0.8850) Std. (0.0000)
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0040] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0040] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0040] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0040] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0040] Sample clients!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0040] ...99 clients are selected!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0040] Request evaluation to 99 clients!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0040] [EVALUATE] [SERVER] | loss: 0.3966 | acc1: 0.8666 
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0041] Sample clients!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0041] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0041] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:28 PM) [FEDSGD] [MNIST] [Round: 0041] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0041] [UPDATE] [CLIENT] < 000046 > | loss: 0.4861 | acc1: 0.8350 
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0041] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.4861) Std. (0.0000) | Top 10% (0.4861) Std. (0.0000) | Bottom 10% (0.4861) Std. (0.0000)
+    - Acc1: Avg. (0.8350) Std. (0.0000) | Top 10% (0.8350) Std. (0.0000) | Bottom 10% (0.8350) Std. (0.0000)
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0041] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0041] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0041] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0041] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0042] Sample clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0042] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0042] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0042] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0042] [UPDATE] [CLIENT] < 000005 > | loss: 0.6794 | acc1: 0.8050 
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0042] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.6794) Std. (0.0000) | Top 10% (0.6794) Std. (0.0000) | Bottom 10% (0.6794) Std. (0.0000)
+    - Acc1: Avg. (0.8050) Std. (0.0000) | Top 10% (0.8050) Std. (0.0000) | Bottom 10% (0.8050) Std. (0.0000)
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0042] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0042] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0042] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0042] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0043] Sample clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0043] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0043] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0043] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0043] [UPDATE] [CLIENT] < 000045 > | loss: 0.6312 | acc1: 0.7917 
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0043] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.6312) Std. (0.0000) | Top 10% (0.6312) Std. (0.0000) | Bottom 10% (0.6312) Std. (0.0000)
+    - Acc1: Avg. (0.7917) Std. (0.0000) | Top 10% (0.7917) Std. (0.0000) | Bottom 10% (0.7917) Std. (0.0000)
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0043] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0043] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0043] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0043] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0044] Sample clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0044] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0044] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0044] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0044] [UPDATE] [CLIENT] < 000026 > | loss: 0.4363 | acc1: 0.8683 
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0044] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.4363) Std. (0.0000) | Top 10% (0.4363) Std. (0.0000) | Bottom 10% (0.4363) Std. (0.0000)
+    - Acc1: Avg. (0.8683) Std. (0.0000) | Top 10% (0.8683) Std. (0.0000) | Bottom 10% (0.8683) Std. (0.0000)
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0044] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0044] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0044] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0044] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0045] Sample clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0045] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0045] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0045] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0045] [UPDATE] [CLIENT] < 000087 > | loss: 0.3522 | acc1: 0.9083 
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0045] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.3522) Std. (0.0000) | Top 10% (0.3522) Std. (0.0000) | Bottom 10% (0.3522) Std. (0.0000)
+    - Acc1: Avg. (0.9083) Std. (0.0000) | Top 10% (0.9083) Std. (0.0000) | Bottom 10% (0.9083) Std. (0.0000)
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0045] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0045] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0045] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0045] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0046] Sample clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0046] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0046] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0046] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0046] [UPDATE] [CLIENT] < 000031 > | loss: 0.3050 | acc1: 0.9283 
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0046] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.3050) Std. (0.0000) | Top 10% (0.3050) Std. (0.0000) | Bottom 10% (0.3050) Std. (0.0000)
+    - Acc1: Avg. (0.9283) Std. (0.0000) | Top 10% (0.9283) Std. (0.0000) | Bottom 10% (0.9283) Std. (0.0000)
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0046] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0046] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0046] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0046] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0047] Sample clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0047] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0047] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0047] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0047] [UPDATE] [CLIENT] < 000085 > | loss: 0.2504 | acc1: 0.9233 
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0047] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.2504) Std. (0.0000) | Top 10% (0.2504) Std. (0.0000) | Bottom 10% (0.2504) Std. (0.0000)
+    - Acc1: Avg. (0.9233) Std. (0.0000) | Top 10% (0.9233) Std. (0.0000) | Bottom 10% (0.9233) Std. (0.0000)
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0047] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0047] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0047] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0047] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0048] Sample clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0048] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0048] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0048] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0048] [UPDATE] [CLIENT] < 000013 > | loss: 0.2552 | acc1: 0.9367 
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0048] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.2552) Std. (0.0000) | Top 10% (0.2552) Std. (0.0000) | Bottom 10% (0.2552) Std. (0.0000)
+    - Acc1: Avg. (0.9367) Std. (0.0000) | Top 10% (0.9367) Std. (0.0000) | Bottom 10% (0.9367) Std. (0.0000)
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0048] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0048] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0048] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0048] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0049] Sample clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0049] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0049] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:29 PM) [FEDSGD] [MNIST] [Round: 0049] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0049] [UPDATE] [CLIENT] < 000045 > | loss: 0.2682 | acc1: 0.9217 
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0049] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.2682) Std. (0.0000) | Top 10% (0.2682) Std. (0.0000) | Bottom 10% (0.2682) Std. (0.0000)
+    - Acc1: Avg. (0.9217) Std. (0.0000) | Top 10% (0.9217) Std. (0.0000) | Bottom 10% (0.9217) Std. (0.0000)
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0049] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0049] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0049] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0049] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0050] Sample clients!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0050] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0050] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0050] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0050] [UPDATE] [CLIENT] < 000099 > | loss: 0.3014 | acc1: 0.9100 
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0050] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.3014) Std. (0.0000) | Top 10% (0.3014) Std. (0.0000) | Bottom 10% (0.3014) Std. (0.0000)
+    - Acc1: Avg. (0.9100) Std. (0.0000) | Top 10% (0.9100) Std. (0.0000) | Bottom 10% (0.9100) Std. (0.0000)
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0050] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0050] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0050] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0050] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0050] Sample clients!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0050] ...99 clients are selected!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0050] Request evaluation to 99 clients!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0050] [EVALUATE] [SERVER] | loss: 0.2661 | acc1: 0.9205 
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0051] Sample clients!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0051] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0051] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0051] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0051] [UPDATE] [CLIENT] < 000059 > | loss: 0.2913 | acc1: 0.9117 
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0051] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.2913) Std. (0.0000) | Top 10% (0.2913) Std. (0.0000) | Bottom 10% (0.2913) Std. (0.0000)
+    - Acc1: Avg. (0.9117) Std. (0.0000) | Top 10% (0.9117) Std. (0.0000) | Bottom 10% (0.9117) Std. (0.0000)
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0051] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0051] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0051] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0051] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0052] Sample clients!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0052] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0052] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:30 PM) [FEDSGD] [MNIST] [Round: 0052] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0052] [UPDATE] [CLIENT] < 000056 > | loss: 0.2485 | acc1: 0.9267 
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0052] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.2485) Std. (0.0000) | Top 10% (0.2485) Std. (0.0000) | Bottom 10% (0.2485) Std. (0.0000)
+    - Acc1: Avg. (0.9267) Std. (0.0000) | Top 10% (0.9267) Std. (0.0000) | Bottom 10% (0.9267) Std. (0.0000)
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0052] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0052] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0052] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0052] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0053] Sample clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0053] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0053] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0053] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0053] [UPDATE] [CLIENT] < 000056 > | loss: 0.2447 | acc1: 0.9200 
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0053] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.2447) Std. (0.0000) | Top 10% (0.2447) Std. (0.0000) | Bottom 10% (0.2447) Std. (0.0000)
+    - Acc1: Avg. (0.9200) Std. (0.0000) | Top 10% (0.9200) Std. (0.0000) | Bottom 10% (0.9200) Std. (0.0000)
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0053] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0053] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0053] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0053] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0054] Sample clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0054] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0054] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0054] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0054] [UPDATE] [CLIENT] < 000086 > | loss: 0.3566 | acc1: 0.8917 
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0054] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.3566) Std. (0.0000) | Top 10% (0.3566) Std. (0.0000) | Bottom 10% (0.3566) Std. (0.0000)
+    - Acc1: Avg. (0.8917) Std. (0.0000) | Top 10% (0.8917) Std. (0.0000) | Bottom 10% (0.8917) Std. (0.0000)
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0054] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0054] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0054] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0054] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0055] Sample clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0055] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0055] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0055] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0055] [UPDATE] [CLIENT] < 000027 > | loss: 0.3913 | acc1: 0.8833 
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0055] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.3913) Std. (0.0000) | Top 10% (0.3913) Std. (0.0000) | Bottom 10% (0.3913) Std. (0.0000)
+    - Acc1: Avg. (0.8833) Std. (0.0000) | Top 10% (0.8833) Std. (0.0000) | Bottom 10% (0.8833) Std. (0.0000)
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0055] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0055] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0055] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0055] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0056] Sample clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0056] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0056] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0056] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0056] [UPDATE] [CLIENT] < 000065 > | loss: 0.3405 | acc1: 0.8883 
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0056] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.3405) Std. (0.0000) | Top 10% (0.3405) Std. (0.0000) | Bottom 10% (0.3405) Std. (0.0000)
+    - Acc1: Avg. (0.8883) Std. (0.0000) | Top 10% (0.8883) Std. (0.0000) | Bottom 10% (0.8883) Std. (0.0000)
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0056] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0056] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0056] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0056] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0057] Sample clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0057] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0057] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0057] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0057] [UPDATE] [CLIENT] < 000060 > | loss: 0.3618 | acc1: 0.8883 
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0057] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.3618) Std. (0.0000) | Top 10% (0.3618) Std. (0.0000) | Bottom 10% (0.3618) Std. (0.0000)
+    - Acc1: Avg. (0.8883) Std. (0.0000) | Top 10% (0.8883) Std. (0.0000) | Bottom 10% (0.8883) Std. (0.0000)
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0057] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0057] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0057] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0057] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0058] Sample clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0058] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0058] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0058] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0058] [UPDATE] [CLIENT] < 000094 > | loss: 0.2645 | acc1: 0.9283 
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0058] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.2645) Std. (0.0000) | Top 10% (0.2645) Std. (0.0000) | Bottom 10% (0.2645) Std. (0.0000)
+    - Acc1: Avg. (0.9283) Std. (0.0000) | Top 10% (0.9283) Std. (0.0000) | Bottom 10% (0.9283) Std. (0.0000)
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0058] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0058] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0058] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0058] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0059] Sample clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0059] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0059] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0059] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0059] [UPDATE] [CLIENT] < 000021 > | loss: 0.2487 | acc1: 0.9317 
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0059] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.2487) Std. (0.0000) | Top 10% (0.2487) Std. (0.0000) | Bottom 10% (0.2487) Std. (0.0000)
+    - Acc1: Avg. (0.9317) Std. (0.0000) | Top 10% (0.9317) Std. (0.0000) | Bottom 10% (0.9317) Std. (0.0000)
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0059] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0059] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0059] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0059] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0060] Sample clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0060] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0060] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:31 PM) [FEDSGD] [MNIST] [Round: 0060] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0060] [UPDATE] [CLIENT] < 000084 > | loss: 0.2515 | acc1: 0.9217 
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0060] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.2515) Std. (0.0000) | Top 10% (0.2515) Std. (0.0000) | Bottom 10% (0.2515) Std. (0.0000)
+    - Acc1: Avg. (0.9217) Std. (0.0000) | Top 10% (0.9217) Std. (0.0000) | Bottom 10% (0.9217) Std. (0.0000)
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0060] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0060] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0060] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0060] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0060] Sample clients!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0060] ...99 clients are selected!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0060] Request evaluation to 99 clients!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0060] [EVALUATE] [SERVER] | loss: 0.1952 | acc1: 0.9465 
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0061] Sample clients!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0061] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0061] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0061] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0061] [UPDATE] [CLIENT] < 000000 > | loss: 0.2071 | acc1: 0.9417 
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0061] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.2071) Std. (0.0000) | Top 10% (0.2071) Std. (0.0000) | Bottom 10% (0.2071) Std. (0.0000)
+    - Acc1: Avg. (0.9417) Std. (0.0000) | Top 10% (0.9417) Std. (0.0000) | Bottom 10% (0.9417) Std. (0.0000)
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0061] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0061] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0061] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0061] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0062] Sample clients!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0062] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0062] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0062] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0062] [UPDATE] [CLIENT] < 000045 > | loss: 0.2157 | acc1: 0.9467 
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0062] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.2157) Std. (0.0000) | Top 10% (0.2157) Std. (0.0000) | Bottom 10% (0.2157) Std. (0.0000)
+    - Acc1: Avg. (0.9467) Std. (0.0000) | Top 10% (0.9467) Std. (0.0000) | Bottom 10% (0.9467) Std. (0.0000)
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0062] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0062] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0062] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0062] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0063] Sample clients!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0063] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0063] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:32 PM) [FEDSGD] [MNIST] [Round: 0063] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0063] [UPDATE] [CLIENT] < 000038 > | loss: 0.1452 | acc1: 0.9600 
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0063] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1452) Std. (0.0000) | Top 10% (0.1452) Std. (0.0000) | Bottom 10% (0.1452) Std. (0.0000)
+    - Acc1: Avg. (0.9600) Std. (0.0000) | Top 10% (0.9600) Std. (0.0000) | Bottom 10% (0.9600) Std. (0.0000)
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0063] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0063] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0063] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0063] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0064] Sample clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0064] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0064] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0064] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0064] [UPDATE] [CLIENT] < 000096 > | loss: 0.1480 | acc1: 0.9467 
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0064] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1480) Std. (0.0000) | Top 10% (0.1480) Std. (0.0000) | Bottom 10% (0.1480) Std. (0.0000)
+    - Acc1: Avg. (0.9467) Std. (0.0000) | Top 10% (0.9467) Std. (0.0000) | Bottom 10% (0.9467) Std. (0.0000)
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0064] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0064] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0064] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0064] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0065] Sample clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0065] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0065] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0065] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0065] [UPDATE] [CLIENT] < 000049 > | loss: 0.2148 | acc1: 0.9283 
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0065] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.2148) Std. (0.0000) | Top 10% (0.2148) Std. (0.0000) | Bottom 10% (0.2148) Std. (0.0000)
+    - Acc1: Avg. (0.9283) Std. (0.0000) | Top 10% (0.9283) Std. (0.0000) | Bottom 10% (0.9283) Std. (0.0000)
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0065] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0065] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0065] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0065] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0066] Sample clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0066] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0066] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0066] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0066] [UPDATE] [CLIENT] < 000053 > | loss: 0.1808 | acc1: 0.9383 
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0066] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1808) Std. (0.0000) | Top 10% (0.1808) Std. (0.0000) | Bottom 10% (0.1808) Std. (0.0000)
+    - Acc1: Avg. (0.9383) Std. (0.0000) | Top 10% (0.9383) Std. (0.0000) | Bottom 10% (0.9383) Std. (0.0000)
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0066] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0066] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0066] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0066] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0067] Sample clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0067] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0067] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0067] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0067] [UPDATE] [CLIENT] < 000068 > | loss: 0.2343 | acc1: 0.9417 
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0067] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.2343) Std. (0.0000) | Top 10% (0.2343) Std. (0.0000) | Bottom 10% (0.2343) Std. (0.0000)
+    - Acc1: Avg. (0.9417) Std. (0.0000) | Top 10% (0.9417) Std. (0.0000) | Bottom 10% (0.9417) Std. (0.0000)
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0067] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0067] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0067] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0067] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0068] Sample clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0068] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0068] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0068] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0068] [UPDATE] [CLIENT] < 000095 > | loss: 0.1611 | acc1: 0.9433 
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0068] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1611) Std. (0.0000) | Top 10% (0.1611) Std. (0.0000) | Bottom 10% (0.1611) Std. (0.0000)
+    - Acc1: Avg. (0.9433) Std. (0.0000) | Top 10% (0.9433) Std. (0.0000) | Bottom 10% (0.9433) Std. (0.0000)
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0068] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0068] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0068] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0068] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0069] Sample clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0069] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0069] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0069] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0069] [UPDATE] [CLIENT] < 000094 > | loss: 0.1722 | acc1: 0.9500 
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0069] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1722) Std. (0.0000) | Top 10% (0.1722) Std. (0.0000) | Bottom 10% (0.1722) Std. (0.0000)
+    - Acc1: Avg. (0.9500) Std. (0.0000) | Top 10% (0.9500) Std. (0.0000) | Bottom 10% (0.9500) Std. (0.0000)
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0069] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0069] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0069] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0069] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0070] Sample clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0070] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0070] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0070] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0070] [UPDATE] [CLIENT] < 000069 > | loss: 0.1719 | acc1: 0.9550 
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0070] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1719) Std. (0.0000) | Top 10% (0.1719) Std. (0.0000) | Bottom 10% (0.1719) Std. (0.0000)
+    - Acc1: Avg. (0.9550) Std. (0.0000) | Top 10% (0.9550) Std. (0.0000) | Bottom 10% (0.9550) Std. (0.0000)
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0070] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0070] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0070] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:33 PM) [FEDSGD] [MNIST] [Round: 0070] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0070] Sample clients!
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0070] ...99 clients are selected!
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0070] Request evaluation to 99 clients!
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0070] [EVALUATE] [SERVER] | loss: 0.1693 | acc1: 0.9489 
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0071] Sample clients!
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0071] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0071] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0071] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0071] [UPDATE] [CLIENT] < 000068 > | loss: 0.2186 | acc1: 0.9383 
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0071] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.2186) Std. (0.0000) | Top 10% (0.2186) Std. (0.0000) | Bottom 10% (0.2186) Std. (0.0000)
+    - Acc1: Avg. (0.9383) Std. (0.0000) | Top 10% (0.9383) Std. (0.0000) | Bottom 10% (0.9383) Std. (0.0000)
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0071] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0071] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0071] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0071] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0072] Sample clients!
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0072] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0072] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0072] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0072] [UPDATE] [CLIENT] < 000054 > | loss: 0.1844 | acc1: 0.9500 
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0072] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1844) Std. (0.0000) | Top 10% (0.1844) Std. (0.0000) | Bottom 10% (0.1844) Std. (0.0000)
+    - Acc1: Avg. (0.9500) Std. (0.0000) | Top 10% (0.9500) Std. (0.0000) | Bottom 10% (0.9500) Std. (0.0000)
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0072] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0072] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0072] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0072] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0073] Sample clients!
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0073] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0073] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:34 PM) [FEDSGD] [MNIST] [Round: 0073] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0073] [UPDATE] [CLIENT] < 000084 > | loss: 0.1962 | acc1: 0.9450 
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0073] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1962) Std. (0.0000) | Top 10% (0.1962) Std. (0.0000) | Bottom 10% (0.1962) Std. (0.0000)
+    - Acc1: Avg. (0.9450) Std. (0.0000) | Top 10% (0.9450) Std. (0.0000) | Bottom 10% (0.9450) Std. (0.0000)
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0073] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0073] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0073] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0073] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0074] Sample clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0074] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0074] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0074] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0074] [UPDATE] [CLIENT] < 000047 > | loss: 0.1739 | acc1: 0.9500 
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0074] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1739) Std. (0.0000) | Top 10% (0.1739) Std. (0.0000) | Bottom 10% (0.1739) Std. (0.0000)
+    - Acc1: Avg. (0.9500) Std. (0.0000) | Top 10% (0.9500) Std. (0.0000) | Bottom 10% (0.9500) Std. (0.0000)
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0074] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0074] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0074] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0074] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0075] Sample clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0075] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0075] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0075] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0075] [UPDATE] [CLIENT] < 000008 > | loss: 0.1511 | acc1: 0.9567 
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0075] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1511) Std. (0.0000) | Top 10% (0.1511) Std. (0.0000) | Bottom 10% (0.1511) Std. (0.0000)
+    - Acc1: Avg. (0.9567) Std. (0.0000) | Top 10% (0.9567) Std. (0.0000) | Bottom 10% (0.9567) Std. (0.0000)
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0075] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0075] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0075] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0075] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0076] Sample clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0076] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0076] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0076] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0076] [UPDATE] [CLIENT] < 000064 > | loss: 0.1945 | acc1: 0.9483 
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0076] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1945) Std. (0.0000) | Top 10% (0.1945) Std. (0.0000) | Bottom 10% (0.1945) Std. (0.0000)
+    - Acc1: Avg. (0.9483) Std. (0.0000) | Top 10% (0.9483) Std. (0.0000) | Bottom 10% (0.9483) Std. (0.0000)
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0076] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0076] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0076] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0076] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0077] Sample clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0077] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0077] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0077] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0077] [UPDATE] [CLIENT] < 000082 > | loss: 0.1390 | acc1: 0.9550 
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0077] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1390) Std. (0.0000) | Top 10% (0.1390) Std. (0.0000) | Bottom 10% (0.1390) Std. (0.0000)
+    - Acc1: Avg. (0.9550) Std. (0.0000) | Top 10% (0.9550) Std. (0.0000) | Bottom 10% (0.9550) Std. (0.0000)
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0077] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0077] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0077] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0077] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0078] Sample clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0078] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0078] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0078] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0078] [UPDATE] [CLIENT] < 000043 > | loss: 0.2018 | acc1: 0.9433 
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0078] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.2018) Std. (0.0000) | Top 10% (0.2018) Std. (0.0000) | Bottom 10% (0.2018) Std. (0.0000)
+    - Acc1: Avg. (0.9433) Std. (0.0000) | Top 10% (0.9433) Std. (0.0000) | Bottom 10% (0.9433) Std. (0.0000)
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0078] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0078] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0078] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0078] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0079] Sample clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0079] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0079] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0079] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0079] [UPDATE] [CLIENT] < 000001 > | loss: 0.2181 | acc1: 0.9417 
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0079] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.2181) Std. (0.0000) | Top 10% (0.2181) Std. (0.0000) | Bottom 10% (0.2181) Std. (0.0000)
+    - Acc1: Avg. (0.9417) Std. (0.0000) | Top 10% (0.9417) Std. (0.0000) | Bottom 10% (0.9417) Std. (0.0000)
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0079] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0079] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0079] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0079] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0080] Sample clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0080] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0080] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:35 PM) [FEDSGD] [MNIST] [Round: 0080] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0080] [UPDATE] [CLIENT] < 000053 > | loss: 0.2488 | acc1: 0.9133 
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0080] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.2488) Std. (0.0000) | Top 10% (0.2488) Std. (0.0000) | Bottom 10% (0.2488) Std. (0.0000)
+    - Acc1: Avg. (0.9133) Std. (0.0000) | Top 10% (0.9133) Std. (0.0000) | Bottom 10% (0.9133) Std. (0.0000)
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0080] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0080] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0080] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0080] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0080] Sample clients!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0080] ...99 clients are selected!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0080] Request evaluation to 99 clients!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0080] [EVALUATE] [SERVER] | loss: 0.2854 | acc1: 0.9065 
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0081] Sample clients!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0081] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0081] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0081] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0081] [UPDATE] [CLIENT] < 000029 > | loss: 0.3448 | acc1: 0.8850 
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0081] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.3448) Std. (0.0000) | Top 10% (0.3448) Std. (0.0000) | Bottom 10% (0.3448) Std. (0.0000)
+    - Acc1: Avg. (0.8850) Std. (0.0000) | Top 10% (0.8850) Std. (0.0000) | Bottom 10% (0.8850) Std. (0.0000)
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0081] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0081] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0081] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0081] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0082] Sample clients!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0082] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0082] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0082] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0082] [UPDATE] [CLIENT] < 000046 > | loss: 0.4752 | acc1: 0.8400 
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0082] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.4752) Std. (0.0000) | Top 10% (0.4752) Std. (0.0000) | Bottom 10% (0.4752) Std. (0.0000)
+    - Acc1: Avg. (0.8400) Std. (0.0000) | Top 10% (0.8400) Std. (0.0000) | Bottom 10% (0.8400) Std. (0.0000)
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0082] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0082] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0082] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0082] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0083] Sample clients!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0083] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0083] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:36 PM) [FEDSGD] [MNIST] [Round: 0083] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0083] [UPDATE] [CLIENT] < 000022 > | loss: 0.3479 | acc1: 0.8900 
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0083] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.3479) Std. (0.0000) | Top 10% (0.3479) Std. (0.0000) | Bottom 10% (0.3479) Std. (0.0000)
+    - Acc1: Avg. (0.8900) Std. (0.0000) | Top 10% (0.8900) Std. (0.0000) | Bottom 10% (0.8900) Std. (0.0000)
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0083] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0083] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0083] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0083] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0084] Sample clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0084] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0084] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0084] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0084] [UPDATE] [CLIENT] < 000038 > | loss: 0.1337 | acc1: 0.9633 
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0084] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1337) Std. (0.0000) | Top 10% (0.1337) Std. (0.0000) | Bottom 10% (0.1337) Std. (0.0000)
+    - Acc1: Avg. (0.9633) Std. (0.0000) | Top 10% (0.9633) Std. (0.0000) | Bottom 10% (0.9633) Std. (0.0000)
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0084] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0084] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0084] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0084] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0085] Sample clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0085] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0085] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0085] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0085] [UPDATE] [CLIENT] < 000001 > | loss: 0.1735 | acc1: 0.9533 
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0085] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1735) Std. (0.0000) | Top 10% (0.1735) Std. (0.0000) | Bottom 10% (0.1735) Std. (0.0000)
+    - Acc1: Avg. (0.9533) Std. (0.0000) | Top 10% (0.9533) Std. (0.0000) | Bottom 10% (0.9533) Std. (0.0000)
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0085] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0085] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0085] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0085] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0086] Sample clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0086] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0086] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0086] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0086] [UPDATE] [CLIENT] < 000090 > | loss: 0.1617 | acc1: 0.9433 
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0086] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1617) Std. (0.0000) | Top 10% (0.1617) Std. (0.0000) | Bottom 10% (0.1617) Std. (0.0000)
+    - Acc1: Avg. (0.9433) Std. (0.0000) | Top 10% (0.9433) Std. (0.0000) | Bottom 10% (0.9433) Std. (0.0000)
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0086] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0086] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0086] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0086] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0087] Sample clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0087] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0087] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0087] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0087] [UPDATE] [CLIENT] < 000068 > | loss: 0.1841 | acc1: 0.9483 
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0087] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1841) Std. (0.0000) | Top 10% (0.1841) Std. (0.0000) | Bottom 10% (0.1841) Std. (0.0000)
+    - Acc1: Avg. (0.9483) Std. (0.0000) | Top 10% (0.9483) Std. (0.0000) | Bottom 10% (0.9483) Std. (0.0000)
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0087] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0087] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0087] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0087] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0088] Sample clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0088] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0088] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0088] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0088] [UPDATE] [CLIENT] < 000016 > | loss: 0.1715 | acc1: 0.9483 
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0088] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1715) Std. (0.0000) | Top 10% (0.1715) Std. (0.0000) | Bottom 10% (0.1715) Std. (0.0000)
+    - Acc1: Avg. (0.9483) Std. (0.0000) | Top 10% (0.9483) Std. (0.0000) | Bottom 10% (0.9483) Std. (0.0000)
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0088] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0088] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0088] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0088] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0089] Sample clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0089] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0089] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0089] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0089] [UPDATE] [CLIENT] < 000035 > | loss: 0.1333 | acc1: 0.9633 
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0089] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1333) Std. (0.0000) | Top 10% (0.1333) Std. (0.0000) | Bottom 10% (0.1333) Std. (0.0000)
+    - Acc1: Avg. (0.9633) Std. (0.0000) | Top 10% (0.9633) Std. (0.0000) | Bottom 10% (0.9633) Std. (0.0000)
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0089] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0089] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0089] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0089] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0090] Sample clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0090] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0090] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0090] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0090] [UPDATE] [CLIENT] < 000005 > | loss: 0.1674 | acc1: 0.9567 
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0090] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1674) Std. (0.0000) | Top 10% (0.1674) Std. (0.0000) | Bottom 10% (0.1674) Std. (0.0000)
+    - Acc1: Avg. (0.9567) Std. (0.0000) | Top 10% (0.9567) Std. (0.0000) | Bottom 10% (0.9567) Std. (0.0000)
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0090] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0090] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0090] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0090] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0090] Sample clients!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0090] ...99 clients are selected!
+[INFO] (2023/12/20 02:57:37 PM) [FEDSGD] [MNIST] [Round: 0090] Request evaluation to 99 clients!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0090] [EVALUATE] [SERVER] | loss: 0.1470 | acc1: 0.9530 
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0091] Sample clients!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0091] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0091] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0091] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0091] [UPDATE] [CLIENT] < 000088 > | loss: 0.1550 | acc1: 0.9500 
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0091] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1550) Std. (0.0000) | Top 10% (0.1550) Std. (0.0000) | Bottom 10% (0.1550) Std. (0.0000)
+    - Acc1: Avg. (0.9500) Std. (0.0000) | Top 10% (0.9500) Std. (0.0000) | Bottom 10% (0.9500) Std. (0.0000)
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0091] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0091] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0091] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0091] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0092] Sample clients!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0092] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0092] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0092] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0092] [UPDATE] [CLIENT] < 000038 > | loss: 0.1241 | acc1: 0.9633 
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0092] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1241) Std. (0.0000) | Top 10% (0.1241) Std. (0.0000) | Bottom 10% (0.1241) Std. (0.0000)
+    - Acc1: Avg. (0.9633) Std. (0.0000) | Top 10% (0.9633) Std. (0.0000) | Bottom 10% (0.9633) Std. (0.0000)
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0092] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0092] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0092] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0092] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0093] Sample clients!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0093] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0093] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0093] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0093] [UPDATE] [CLIENT] < 000089 > | loss: 0.1444 | acc1: 0.9533 
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0093] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1444) Std. (0.0000) | Top 10% (0.1444) Std. (0.0000) | Bottom 10% (0.1444) Std. (0.0000)
+    - Acc1: Avg. (0.9533) Std. (0.0000) | Top 10% (0.9533) Std. (0.0000) | Bottom 10% (0.9533) Std. (0.0000)
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0093] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0093] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0093] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0093] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0094] Sample clients!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0094] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0094] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:38 PM) [FEDSGD] [MNIST] [Round: 0094] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0094] [UPDATE] [CLIENT] < 000051 > | loss: 0.1492 | acc1: 0.9600 
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0094] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1492) Std. (0.0000) | Top 10% (0.1492) Std. (0.0000) | Bottom 10% (0.1492) Std. (0.0000)
+    - Acc1: Avg. (0.9600) Std. (0.0000) | Top 10% (0.9600) Std. (0.0000) | Bottom 10% (0.9600) Std. (0.0000)
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0094] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0094] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0094] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0094] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0095] Sample clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0095] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0095] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0095] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0095] [UPDATE] [CLIENT] < 000034 > | loss: 0.1666 | acc1: 0.9517 
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0095] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1666) Std. (0.0000) | Top 10% (0.1666) Std. (0.0000) | Bottom 10% (0.1666) Std. (0.0000)
+    - Acc1: Avg. (0.9517) Std. (0.0000) | Top 10% (0.9517) Std. (0.0000) | Bottom 10% (0.9517) Std. (0.0000)
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0095] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0095] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0095] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0095] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0096] Sample clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0096] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0096] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0096] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0096] [UPDATE] [CLIENT] < 000064 > | loss: 0.1724 | acc1: 0.9583 
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0096] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1724) Std. (0.0000) | Top 10% (0.1724) Std. (0.0000) | Bottom 10% (0.1724) Std. (0.0000)
+    - Acc1: Avg. (0.9583) Std. (0.0000) | Top 10% (0.9583) Std. (0.0000) | Bottom 10% (0.9583) Std. (0.0000)
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0096] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0096] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0096] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0096] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0097] Sample clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0097] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0097] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0097] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0097] [UPDATE] [CLIENT] < 000069 > | loss: 0.1279 | acc1: 0.9667 
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0097] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1279) Std. (0.0000) | Top 10% (0.1279) Std. (0.0000) | Bottom 10% (0.1279) Std. (0.0000)
+    - Acc1: Avg. (0.9667) Std. (0.0000) | Top 10% (0.9667) Std. (0.0000) | Bottom 10% (0.9667) Std. (0.0000)
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0097] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0097] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0097] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0097] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0098] Sample clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0098] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0098] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0098] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0098] [UPDATE] [CLIENT] < 000063 > | loss: 0.1100 | acc1: 0.9650 
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0098] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1100) Std. (0.0000) | Top 10% (0.1100) Std. (0.0000) | Bottom 10% (0.1100) Std. (0.0000)
+    - Acc1: Avg. (0.9650) Std. (0.0000) | Top 10% (0.9650) Std. (0.0000) | Bottom 10% (0.9650) Std. (0.0000)
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0098] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0098] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0098] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0098] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0099] Sample clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0099] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0099] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0099] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0099] [UPDATE] [CLIENT] < 000056 > | loss: 0.1153 | acc1: 0.9700 
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0099] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1153) Std. (0.0000) | Top 10% (0.1153) Std. (0.0000) | Bottom 10% (0.1153) Std. (0.0000)
+    - Acc1: Avg. (0.9700) Std. (0.0000) | Top 10% (0.9700) Std. (0.0000) | Bottom 10% (0.9700) Std. (0.0000)
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0099] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0099] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0099] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0099] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0100] Sample clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0100] ...1 clients are selected!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0100] Request updates to 1 clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0100] ...update clients... 100% |████████████████████| [1     /1]
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0100] [UPDATE] [CLIENT] < 000010 > | loss: 0.1490 | acc1: 0.9533 
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0100] [UPDATE] [SUMMARY] (1 clients):
+    - Loss: Avg. (0.1490) Std. (0.0000) | Top 10% (0.1490) Std. (0.0000) | Bottom 10% (0.1490) Std. (0.0000)
+    - Acc1: Avg. (0.9533) Std. (0.0000) | Top 10% (0.9533) Std. (0.0000) | Bottom 10% (0.9533) Std. (0.0000)
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0100] ...completed updates of 1 clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0100] Request evaluation to 1 clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0100] Aggregate updated signals!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0100] ...successfully aggregated into a new gloal model!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0100] Sample clients!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0100] ...99 clients are selected!
+[INFO] (2023/12/20 02:57:39 PM) [FEDSGD] [MNIST] [Round: 0100] Request evaluation to 99 clients!
+[INFO] (2023/12/20 02:57:40 PM) [FEDSGD] [MNIST] [Round: 0100] [EVALUATE] [SERVER] | loss: 0.1277 | acc1: 0.9596 
+[INFO] (2023/12/20 02:57:40 PM) [FEDSGD] [MNIST] [Round: 0100] Save results and the global model checkpoint!
+[INFO] (2023/12/20 02:57:40 PM) [FEDSGD] [MNIST] [Round: 0100] ...finished federated learning!
